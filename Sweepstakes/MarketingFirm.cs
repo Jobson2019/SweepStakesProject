@@ -8,7 +8,7 @@ namespace Sweepstakes
     {
         public string contestant;
         public string userInput;
-        public int random;
+        static Random random = new Random();
         //create a sweepstakes
         public int GenerateRandomNumber()
         {
@@ -19,13 +19,14 @@ namespace Sweepstakes
         {
             contestant.registrationNumber = GenerateRandomNumber();
         }
-
-        public void CreateContestant(UserInterface userinterface)
+        //move to sweepstakes?
+        public Contestant CreateContestant()
         {
             Contestant newContestant = new Contestant();
 
             {
                 UserInterface.AddContestant(newContestant);
+                return newContestant;
             }
         }
     }
