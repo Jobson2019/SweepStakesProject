@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class Sweepstakes
+    public class Sweepstakes
     {
         public Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
         public Contestant Winner;
@@ -15,10 +15,21 @@ namespace Sweepstakes
             
         }
 
-        
+
+        public Contestant CreateContestant()
+        {
+            Contestant newContestant = new Contestant();
+
+            {
+                UserInterface.AddContestant(newContestant);
+                return newContestant;
+            }
+        }
+
+
         public void RegisterContestant(MarketingFirm marketingFirm)
         {
-            Contestant customerToAdd = marketingFirm.CreateContestant();
+            Contestant customerToAdd = CreateContestant();
 
 
             while(contestants.ContainsKey(customerToAdd.registrationNumber))

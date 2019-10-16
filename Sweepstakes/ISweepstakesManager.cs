@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    interface ISweepstakesManager
+    public interface ISweepstakesManager
     {
        public void InsertSweepstakes(Sweepstakes sweepstakes);
 
