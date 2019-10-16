@@ -6,8 +6,10 @@ namespace Sweepstakes
 {
     class FactoryManager
     {
-        public ISweepstakesManager CreateSweepstakesManager(string sweepstakesChoice)
+        public ISweepstakesManager CreateSweepstakesManager()
         {
+            Console.WriteLine("Would You Like to Use a 'Stack' or 'Queue'?");
+            string sweepstakesChoice = Console.ReadLine();
             ISweepstakesManager startSweepstakes;
             if (sweepstakesChoice == "Stack")
             {
@@ -24,6 +26,9 @@ namespace Sweepstakes
                 return null;
             }
 
+
+
         }
     }
 }
+       

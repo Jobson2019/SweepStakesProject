@@ -7,7 +7,12 @@ namespace Sweepstakes
         static void Main(string[] args)
         {
             //create UI first, ask to choose stack or queue
-            //then create marketingfirm class and pass in user choice
+            
+            
+            FactoryManager factory = new FactoryManager();
+            MarketingFirm firm = new MarketingFirm();
+            Sweepstakes sweepstakes = new Sweepstakes();
+            
             
         }
     }
