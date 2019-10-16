@@ -28,9 +28,17 @@ namespace Sweepstakes
         }
 
         //call in program
-        public static void ChooseStackOrQueue()
+        public static void ChooseStackOrQueue(Sweepstakes sweepstakes)
         {
+            SweepstakesStackManager.PushToStack();
+            SweepstakesQueue.
+            Console.WriteLine("Would you prefer a Stack or a Queue?");
+            string choice
+            switch 
+                // make seperate methods for switch statement and to execute choose stack or queue?
+                //help me tom cruise
 
+            
         }
 
         

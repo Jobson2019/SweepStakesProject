@@ -17,12 +17,13 @@ namespace Sweepstakes
         {
             st.Push(sweepstakes);
         }
-        public void RemoveFromStack(Sweepstakes sweepstakes)
+        public Sweepstakes RemoveFromStack(Sweepstakes sweepstakes)
         {
-            st.Pop(sweepstakes);
+            //how does this work? and does it?
+            return st.Pop();
         }
 
-
+        //does sweepstakes manager need to be a public interface?
 
 
 
