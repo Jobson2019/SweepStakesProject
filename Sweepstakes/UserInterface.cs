@@ -31,7 +31,7 @@ namespace Sweepstakes
         public static void ChooseStackOrQueue(Sweepstakes sweepstakes)
         {
             SweepstakesStackManager.PushToStack();
-            SweepstakesQueue.
+            SweepstakesQueueManager.
             Console.WriteLine("Would you prefer a Stack or a Queue?");
             string choice
             switch 

@@ -4,21 +4,21 @@ using System.Text;
 
 namespace Sweepstakes
 {
-     class SweepstakesQueue 
+     class SweepstakesQueueManager : ISweepstakesManager
     {
         public Queue<Sweepstakes> queue;
 
-        public SweepstakesQueue()
+        public SweepstakesQueueManager()
         {
             queue = new Queue<Sweepstakes>();
         }
 
-        public void AddToQueue(Sweepstakes sweepstakes)
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             queue.Enqueue(sweepstakes);
         }
 
-        public Sweepstakes RemoveFromQueue(Sweepstakes sweepstakes)
+        public Sweepstakes GetSweepstakes()
         {
             //how does this work?
 

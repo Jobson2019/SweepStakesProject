@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class SweepstakesStackManager
+    class SweepstakesStackManager : ISweepstakesManager
     {
         Stack<Sweepstakes> st;
 
@@ -13,11 +13,11 @@ namespace Sweepstakes
             st = new Stack<Sweepstakes>();
             }
 
-        public void PushToStack(Sweepstakes sweepstakes)
+        public void InsertSweepstakes(Sweepstakes sweepstakes)
         {
             st.Push(sweepstakes);
         }
-        public Sweepstakes RemoveFromStack(Sweepstakes sweepstakes)
+        public Sweepstakes GetSweepstakes()
         {
             //how does this work? and does it?
             return st.Pop();
