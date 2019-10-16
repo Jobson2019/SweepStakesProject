@@ -29,10 +29,6 @@ namespace Sweepstakes
                 return newContestant;
             }     
         }
-        public void StartSweepstakes()
-        {
-
-
-        }
+        
     }
 }

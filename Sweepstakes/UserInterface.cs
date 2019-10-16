@@ -6,7 +6,7 @@ namespace Sweepstakes
 {
    static class UserInterface
     {
-        
+
         
         
 
@@ -24,11 +24,16 @@ namespace Sweepstakes
             Console.WriteLine("Enter Email Address Here");
             string inputEmail = Console.ReadLine();
             contestant.emailAddress = inputEmail;
-            
+
         }
 
-        //public static void ChooseStack()
+        //call in program
+        public static void ChooseStackOrQueue()
+        {
 
- 
+        }
+
+        
+
     }
 }
