@@ -8,11 +8,11 @@ namespace Sweepstakes
     {
         public Dictionary<int, Contestant> contestants = new Dictionary<int, Contestant>();
         public Contestant Winner;
-
+        public string name;
 
         public Sweepstakes(string name)
         {
-            
+            this.name = name;
         }
 
 

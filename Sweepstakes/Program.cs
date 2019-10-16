@@ -13,6 +13,10 @@ namespace Sweepstakes
             ISweepstakesManager manager = factory.CreateSweepstakesManager();
             MarketingFirm firm = new MarketingFirm(manager);
             firm.CreateSweepStakes();
+            Sweepstakes sweepstakes = manager.GetSweepstakes();
+            sweepstakes.RegisterContestant(firm);
+
+            
             
             
             
