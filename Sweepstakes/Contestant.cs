@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class Contestant
+    public class Contestant
     {
         //First Name
         public string firstName;
@@ -15,4 +15,4 @@ namespace Sweepstakes
         //Registration Number
         public int registrationNumber;
     }
-}
+}   

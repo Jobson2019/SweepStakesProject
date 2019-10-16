@@ -12,7 +12,7 @@ namespace Sweepstakes
         //create a sweepstakes
         public int GenerateRandomNumber()
         {
-            return random.Next(1, 500);
+            return random.Next(1, 10000);
         }
 
         public void CreateRegNumber(Contestant contestant)
@@ -27,7 +27,12 @@ namespace Sweepstakes
             {
                 UserInterface.AddContestant(newContestant);
                 return newContestant;
-            }
+            }     
+        }
+        public void StartSweepstakes()
+        {
+
+
         }
     }
 }

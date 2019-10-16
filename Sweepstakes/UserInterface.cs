@@ -4,15 +4,15 @@ using System.Text;
 
 namespace Sweepstakes
 {
-    class UserInterface
+   static class UserInterface
     {
         
-        static Random random = new Random();
+        
         
 
         
 
-        public void AddContestant(Contestant contestant)
+       public static void AddContestant(Contestant contestant)
         {
             
             Console.WriteLine("Enter First Name Here");
@@ -26,6 +26,8 @@ namespace Sweepstakes
             contestant.emailAddress = inputEmail;
             
         }
+
+        //public static void ChooseStack()
 
  
     }
