@@ -26,6 +26,7 @@ namespace Sweepstakes
             }
         }
 
+        
 
         public void RegisterContestant(MarketingFirm marketingFirm)
         {
@@ -70,6 +71,15 @@ namespace Sweepstakes
             Console.WriteLine(contestant.emailAddress);
             Console.WriteLine(contestant.registrationNumber);
 
+        }
+
+        public void PrintWinner(string winnerName)
+        {
+            
+            Console.WriteLine(Winner.firstName);
+            Console.WriteLine(Winner.lastName);
+            Console.WriteLine(Winner.emailAddress);
+            Console.WriteLine(Winner.registrationNumber);
         }
     }
 }
