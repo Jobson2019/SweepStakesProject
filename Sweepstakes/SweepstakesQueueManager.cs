@@ -20,7 +20,7 @@ namespace Sweepstakes
 
         public Sweepstakes GetSweepstakes()
         {
-            //how does this work?
+            
 
            return queue.Dequeue();
         }
